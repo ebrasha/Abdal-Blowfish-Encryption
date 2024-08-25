@@ -360,7 +360,7 @@ namespace Abdal_Security_Group_App
                 byte[] encryptedBytes = crypt.EncryptBytes(inputBytes);
 
                 // Convert the encrypted bytes to a hex string for display/storage
-                string encStr = crypt.Encode(encryptedBytes, "hex");
+                string encStr = crypt.Encode(encryptedBytes, EncodingModeList.Text);
                 SendEncTextToForm(encStr);
             }
             else
@@ -369,7 +369,7 @@ namespace Abdal_Security_Group_App
                 string encStr = EncTextForm.GetEncText();
 
                 // Convert the hex string back to byte array
-                byte[] encryptedBytes = crypt.Decode(encStr, "hex");
+                byte[] encryptedBytes = crypt.Decode(encStr, EncodingModeList.Text);
 
                 // Decrypt the byte array
                 byte[] decryptedBytes = crypt.DecryptBytes(encryptedBytes);
