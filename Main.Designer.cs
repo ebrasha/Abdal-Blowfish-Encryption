@@ -374,6 +374,7 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox3.Cursor = Cursors.Hand;
             pictureBox3.Image = Properties.Resources.key;
             pictureBox3.Location = new Point(283, 30);

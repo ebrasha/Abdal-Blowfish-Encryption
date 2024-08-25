@@ -81,6 +81,18 @@
           }
         }
       },
+      "Microsoft.NET.ILLink.Analyzers/7.0.100-1.23401.1": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Analyzers.props": {}
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/7.0.100-1.23401.1": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/3.1.0": {
         "type": "package",
         "compile": {
@@ -1509,6 +1521,1260 @@
           }
         }
       }
+    },
+    "net7.0-windows7.0/win-x86": {
+      "ChilkatDnCore/9.50.99": {
+        "type": "package",
+        "dependencies": {
+          "ChilkatNativeLib": "9.50.99"
+        },
+        "compile": {
+          "lib/net6.0/ChilkatDnCore.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/ChilkatDnCore.dll": {}
+        }
+      },
+      "ChilkatNativeLib/9.50.99": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x86/native/chilkatDnCore-9_5_0.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.ObjectPool/5.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.ObjectPool.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.ObjectPool.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NET.ILLink.Analyzers/7.0.100-1.23401.1": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Analyzers.props": {}
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/7.0.100-1.23401.1": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Win32.Registry/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Win32.Registry.AccessControl/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.Win32.Registry.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/Microsoft.Win32.Registry.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Windows.Compatibility/8.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.Registry.AccessControl": "8.0.0",
+          "Microsoft.Win32.SystemEvents": "8.0.0",
+          "System.CodeDom": "8.0.0",
+          "System.ComponentModel.Composition": "8.0.0",
+          "System.ComponentModel.Composition.Registration": "8.0.0",
+          "System.Configuration.ConfigurationManager": "8.0.0",
+          "System.Data.Odbc": "8.0.0",
+          "System.Data.OleDb": "8.0.0",
+          "System.Data.SqlClient": "4.8.6",
+          "System.Diagnostics.EventLog": "8.0.0",
+          "System.Diagnostics.PerformanceCounter": "8.0.0",
+          "System.DirectoryServices": "8.0.0",
+          "System.DirectoryServices.AccountManagement": "8.0.0",
+          "System.DirectoryServices.Protocols": "8.0.0",
+          "System.Drawing.Common": "8.0.8",
+          "System.IO.Packaging": "8.0.0",
+          "System.IO.Ports": "8.0.0",
+          "System.Management": "8.0.0",
+          "System.Reflection.Context": "8.0.0",
+          "System.Runtime.Caching": "8.0.0",
+          "System.Security.Cryptography.Pkcs": "8.0.0",
+          "System.Security.Cryptography.ProtectedData": "8.0.0",
+          "System.Security.Cryptography.Xml": "8.0.1",
+          "System.Security.Permissions": "8.0.0",
+          "System.ServiceModel.Duplex": "4.10.0",
+          "System.ServiceModel.Http": "4.10.0",
+          "System.ServiceModel.NetTcp": "4.10.0",
+          "System.ServiceModel.Primitives": "4.10.0",
+          "System.ServiceModel.Security": "4.10.0",
+          "System.ServiceModel.Syndication": "8.0.0",
+          "System.ServiceProcess.ServiceController": "8.0.0",
+          "System.Speech": "8.0.0",
+          "System.Text.Encoding.CodePages": "8.0.0",
+          "System.Threading.AccessControl": "8.0.0",
+          "System.Web.Services.Description": "4.10.0"
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/8.0.0": {
+        "type": "package"
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/8.0.0": {
+        "type": "package"
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/8.0.0": {
+        "type": "package"
+      },
+      "runtime.native.System.Data.SqlClient.sni/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
+          "runtime.win-x64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
+          "runtime.win-x86.runtime.native.System.Data.SqlClient.sni": "4.4.0"
+        }
+      },
+      "runtime.native.System.IO.Ports/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "8.0.0",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "8.0.0",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "8.0.0",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "8.0.0",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "8.0.0"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/8.0.0": {
+        "type": "package"
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/8.0.0": {
+        "type": "package"
+      },
+      "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "type": "package"
+      },
+      "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "type": "package"
+      },
+      "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x86/native/sni.dll": {}
+        }
+      },
+      "System.CodeDom/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.ComponentModel.Composition/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.ComponentModel.Composition.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.ComponentModel.Composition.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.ComponentModel.Composition.Registration/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Composition": "8.0.0",
+          "System.Reflection.Context": "8.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.ComponentModel.Composition.Registration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.ComponentModel.Composition.Registration.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.EventLog": "8.0.0",
+          "System.Security.Cryptography.ProtectedData": "8.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Data.Odbc/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encoding.CodePages": "8.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Data.Odbc.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.Data.Odbc.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Data.OleDb/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "8.0.0",
+          "System.Diagnostics.PerformanceCounter": "8.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Data.OleDb.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.Data.OleDb.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Data.SqlClient/4.8.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0",
+          "runtime.native.System.Data.SqlClient.sni": "4.7.0"
+        },
+        "compile": {
+          "ref/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Diagnostics.EventLog/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.Messages.dll": {},
+          "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Diagnostics.PerformanceCounter/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "8.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Diagnostics.PerformanceCounter.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.Diagnostics.PerformanceCounter.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.DirectoryServices/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.DirectoryServices.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.DirectoryServices.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.DirectoryServices.AccountManagement/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "8.0.0",
+          "System.DirectoryServices": "8.0.0",
+          "System.DirectoryServices.Protocols": "8.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.DirectoryServices.AccountManagement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.DirectoryServices.AccountManagement.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.DirectoryServices.Protocols/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.DirectoryServices.Protocols.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.DirectoryServices.Protocols.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Drawing.Common/8.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Formats.Asn1/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.Formats.Asn1.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Formats.Asn1.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.IO.Packaging/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.IO.Ports/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "8.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Management/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "8.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Private.ServiceModel/4.10.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "Microsoft.Extensions.ObjectPool": "5.0.10",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Reflection.DispatchProxy": "4.7.1",
+          "System.Security.Cryptography.Xml": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Private.ServiceModel.dll": {
+            "related": ".pdb"
+          }
+        },
+        "resource": {
+          "lib/netstandard2.0/cs/System.Private.ServiceModel.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/de/System.Private.ServiceModel.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/System.Private.ServiceModel.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fr/System.Private.ServiceModel.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/it/System.Private.ServiceModel.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/ja/System.Private.ServiceModel.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ko/System.Private.ServiceModel.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/pl/System.Private.ServiceModel.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pt-BR/System.Private.ServiceModel.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/ru/System.Private.ServiceModel.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/tr/System.Private.ServiceModel.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/zh-Hans/System.Private.ServiceModel.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hant/System.Private.ServiceModel.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "System.Reflection.Context/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.Reflection.Context.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Reflection.Context.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Reflection.DispatchProxy/4.7.1": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Reflection.DispatchProxy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Reflection.DispatchProxy.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reflection.Emit/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Runtime.Caching/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "8.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Runtime.Caching.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.Runtime.Caching.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Runtime.Serialization.Schema/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "8.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Runtime.Serialization.Schema.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Runtime.Serialization.Schema.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Security.AccessControl/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Security.Cryptography.Pkcs/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Formats.Asn1": "8.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Security.Cryptography.Pkcs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Security.Cryptography.Xml/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.Pkcs": "8.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Security.Cryptography.Xml.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Security.Cryptography.Xml.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Security.Permissions/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Windows.Extensions": "8.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp3.0/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ServiceModel.Duplex/4.10.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.ServiceModel": "4.10.0",
+          "System.ServiceModel.Primitives": "4.10.0"
+        },
+        "compile": {
+          "ref/net6.0/System.ServiceModel.Duplex.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.ServiceModel.Duplex.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "System.ServiceModel.Http/4.10.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.ServiceModel": "4.10.0",
+          "System.ServiceModel.Primitives": "4.10.0"
+        },
+        "compile": {
+          "ref/net6.0/System.ServiceModel.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.ServiceModel.Http.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "System.ServiceModel.NetTcp/4.10.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.ServiceModel": "4.10.0",
+          "System.ServiceModel.Primitives": "4.10.0"
+        },
+        "compile": {
+          "ref/net6.0/System.ServiceModel.NetTcp.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.ServiceModel.NetTcp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "System.ServiceModel.Primitives/4.10.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.ServiceModel": "4.10.0"
+        },
+        "compile": {
+          "ref/net6.0/System.ServiceModel.Primitives.dll": {},
+          "ref/net6.0/System.ServiceModel.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.ServiceModel.Primitives.dll": {
+            "related": ".pdb"
+          },
+          "lib/net6.0/System.ServiceModel.dll": {
+            "related": ".Primitives.pdb"
+          }
+        }
+      },
+      "System.ServiceModel.Security/4.10.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.ServiceModel": "4.10.0",
+          "System.ServiceModel.Primitives": "4.10.0"
+        },
+        "compile": {
+          "ref/net6.0/System.ServiceModel.Security.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.ServiceModel.Security.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "System.ServiceModel.Syndication/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.ServiceModel.Syndication.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.ServiceModel.Syndication.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.ServiceProcess.ServiceController/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.EventLog": "8.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.ServiceProcess.ServiceController.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.ServiceProcess.ServiceController.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.Text.Encoding.CodePages.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.Text.Encoding.CodePages.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Threading.AccessControl/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.Threading.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.Threading.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Web.Services.Description/4.10.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Web.Services.Description.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Web.Services.Description.dll": {
+            "related": ".pdb"
+          }
+        },
+        "resource": {
+          "lib/netstandard2.0/cs/System.Web.Services.Description.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/de/System.Web.Services.Description.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/System.Web.Services.Description.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fr/System.Web.Services.Description.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/it/System.Web.Services.Description.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/ja/System.Web.Services.Description.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ko/System.Web.Services.Description.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/pl/System.Web.Services.Description.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pt-BR/System.Web.Services.Description.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/ru/System.Web.Services.Description.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/tr/System.Web.Services.Description.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/zh-Hans/System.Web.Services.Description.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hant/System.Web.Services.Description.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "System.Windows.Extensions/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.Windows.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net7.0/System.Windows.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "UI.for.WinForms.AllControls.Net70/2023.2.718": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Composition": "4.7.0",
+          "System.Management": "4.7.0",
+          "System.Reflection.Emit": "4.7.0"
+        },
+        "compile": {
+          "lib/net7.0-windows/MediaFoundation.dll": {},
+          "lib/net7.0-windows/RadControlSpy.dll": {},
+          "lib/net7.0-windows/Telerik.Documents.SpreadsheetStreaming.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.ChartView.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.GridView.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.PdfViewer.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.PivotGrid.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.RadDiagram.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.RadDock.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.RadMap.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.RadMarkupEditor.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.RadSpreadsheet.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.RadWebCam.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.RichTextEditor.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.Scheduler.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.SpellChecker.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.SyntaxEditor.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Aqua.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Breeze.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Crystal.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.CrystalDark.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Desert.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Fluent.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.FluentDark.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.HighContrastBlack.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Material.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.MaterialBlueGrey.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.MaterialPink.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.MaterialTeal.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2007Black.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2007Silver.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2010Black.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2010Blue.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2010Silver.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2013Dark.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2013Light.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2019.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.TelerikMetro.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.TelerikMetroBlue.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.TelerikMetroTouch.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.VisualStudio2012Dark.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.VisualStudio2012Light.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.VisualStudio2022.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Windows11.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Windows7.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Windows8.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.UI.dll": {
+            "related": ".XML"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.dll": {
+            "related": ".ChartView.xml;.GridView.xml;.PdfViewer.xml;.PivotGrid.xml;.RadChart.xml;.RadDiagram.xml;.RadDock.xml;.RadMap.xml;.RadMarkupEditor.xml;.RadSpreadsheet.xml;.RadWebCam.xml;.RichTextEditor.xml;.Scheduler.xml;.SpellChecker.xml;.SyntaxEditor.xml;.UI.XML;.xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.CMapUtils.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Core.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.DrawingML.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Fixed.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Flow.FormatProviders.Doc.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Flow.dll": {
+            "related": ".FormatProviders.Doc.xml;.FormatProviders.Pdf.xml;.xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Spreadsheet.dll": {
+            "related": ".FormatProviders.OpenXml.xml;.FormatProviders.Pdf.xml;.FormatProviders.Xls.xml;.xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.MediaFoundation.dll": {},
+          "lib/net7.0-windows/Telerik.Windows.Zip.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/TelerikCommon.dll": {},
+          "lib/net7.0-windows/TelerikData.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/TelerikExport.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows/MediaFoundation.dll": {},
+          "lib/net7.0-windows/RadControlSpy.dll": {},
+          "lib/net7.0-windows/Telerik.Documents.SpreadsheetStreaming.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.ChartView.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.GridView.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.PdfViewer.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.PivotGrid.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.RadDiagram.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.RadDock.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.RadMap.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.RadMarkupEditor.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.RadSpreadsheet.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.RadWebCam.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.RichTextEditor.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.Scheduler.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.SpellChecker.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.SyntaxEditor.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Aqua.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Breeze.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Crystal.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.CrystalDark.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Desert.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Fluent.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.FluentDark.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.HighContrastBlack.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Material.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.MaterialBlueGrey.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.MaterialPink.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.MaterialTeal.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2007Black.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2007Silver.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2010Black.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2010Blue.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2010Silver.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2013Dark.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2013Light.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Office2019.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.TelerikMetro.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.TelerikMetroBlue.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.TelerikMetroTouch.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.VisualStudio2012Dark.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.VisualStudio2012Light.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.VisualStudio2022.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Windows11.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Windows7.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.Themes.Windows8.dll": {},
+          "lib/net7.0-windows/Telerik.WinControls.UI.dll": {
+            "related": ".XML"
+          },
+          "lib/net7.0-windows/Telerik.WinControls.dll": {
+            "related": ".ChartView.xml;.GridView.xml;.PdfViewer.xml;.PivotGrid.xml;.RadChart.xml;.RadDiagram.xml;.RadDock.xml;.RadMap.xml;.RadMarkupEditor.xml;.RadSpreadsheet.xml;.RadWebCam.xml;.RichTextEditor.xml;.Scheduler.xml;.SpellChecker.xml;.SyntaxEditor.xml;.UI.XML;.xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.CMapUtils.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Core.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.DrawingML.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Fixed.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Flow.FormatProviders.Doc.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Flow.dll": {
+            "related": ".FormatProviders.Doc.xml;.FormatProviders.Pdf.xml;.xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.Documents.Spreadsheet.dll": {
+            "related": ".FormatProviders.OpenXml.xml;.FormatProviders.Pdf.xml;.FormatProviders.Xls.xml;.xml"
+          },
+          "lib/net7.0-windows/Telerik.Windows.MediaFoundation.dll": {},
+          "lib/net7.0-windows/Telerik.Windows.Zip.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/TelerikCommon.dll": {},
+          "lib/net7.0-windows/TelerikData.dll": {
+            "related": ".xml"
+          },
+          "lib/net7.0-windows/TelerikExport.dll": {
+            "related": ".xml"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -1589,6 +2855,53 @@
         "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.xml",
         "microsoft.extensions.objectpool.5.0.10.nupkg.sha512",
         "microsoft.extensions.objectpool.nuspec"
+      ]
+    },
+    "Microsoft.NET.ILLink.Analyzers/7.0.100-1.23401.1": {
+      "sha512": "XirkjOLc5Vc3HsXRc2Z6ZbQv6l0RvWgJa/31w7XqZ914MoSi3H3OCNRMWFw7H2EYfsnKbokFfhCcysAmUcEOgw==",
+      "type": "package",
+      "path": "microsoft.net.illink.analyzers/7.0.100-1.23401.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "analyzers/dotnet/cs/ILLink.CodeFixProvider.dll",
+        "analyzers/dotnet/cs/ILLink.RoslynAnalyzer.dll",
+        "build/Microsoft.NET.ILLink.Analyzers.props",
+        "microsoft.net.illink.analyzers.7.0.100-1.23401.1.nupkg.sha512",
+        "microsoft.net.illink.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.NET.ILLink.Tasks/7.0.100-1.23401.1": {
+      "sha512": "mI6vCdPEhluLtMn/GV0texEWg5oAPQWCCE4LWspM+Bmy75Nd4EQsziQXrdOFqNeSBQMrxDX9C/O5Xi3kpKSMIw==",
+      "type": "package",
+      "path": "microsoft.net.illink.tasks/7.0.100-1.23401.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "Sdk/Sdk.props",
+        "build/6.0_suppressions.xml",
+        "build/Microsoft.NET.ILLink.Tasks.props",
+        "build/Microsoft.NET.ILLink.targets",
+        "microsoft.net.illink.tasks.7.0.100-1.23401.1.nupkg.sha512",
+        "microsoft.net.illink.tasks.nuspec",
+        "tools/net472/ILLink.Tasks.dll",
+        "tools/net472/Mono.Cecil.dll",
+        "tools/net472/System.Buffers.dll",
+        "tools/net472/System.Collections.Immutable.dll",
+        "tools/net472/System.Memory.dll",
+        "tools/net472/System.Numerics.Vectors.dll",
+        "tools/net472/System.Reflection.Metadata.dll",
+        "tools/net472/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/net7.0/ILLink.Tasks.deps.json",
+        "tools/net7.0/ILLink.Tasks.dll",
+        "tools/net7.0/Mono.Cecil.Pdb.dll",
+        "tools/net7.0/Mono.Cecil.dll",
+        "tools/net7.0/illink.deps.json",
+        "tools/net7.0/illink.dll",
+        "tools/net7.0/illink.runtimeconfig.json"
       ]
     },
     "Microsoft.NETCore.Platforms/3.1.0": {
@@ -3719,6 +5032,8 @@
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
       "ChilkatDnCore >= 9.50.99",
+      "Microsoft.NET.ILLink.Analyzers >= 7.0.100-1.23401.1",
+      "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23401.1",
       "Microsoft.Windows.Compatibility >= 8.0.8",
       "Newtonsoft.Json >= 13.0.3",
       "System.Runtime.Serialization.Schema >= 8.0.0",
@@ -3730,7 +5045,7 @@
     "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages": {}
   },
   "project": {
-    "version": "2.0.0",
+    "version": "2.1.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\EbraSha\\Documents\\Github\\Abdal Blowfish Encryption\\Abdal Security Group App.csproj",
       "projectName": "Abdal Blowfish Encryption",
@@ -3779,6 +5094,18 @@
             "target": "Package",
             "version": "[9.50.99, )"
           },
+          "Microsoft.NET.ILLink.Analyzers": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[7.0.100-1.23401.1, )",
+            "autoReferenced": true
+          },
+          "Microsoft.NET.ILLink.Tasks": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[7.0.100-1.23401.1, )",
+            "autoReferenced": true
+          },
           "Microsoft.Windows.Compatibility": {
             "target": "Package",
             "version": "[8.0.8, )"
@@ -3807,6 +5134,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-x86",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
+            "version": "[7.0.20, 7.0.20]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -3816,6 +5157,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x86": {
+        "#import": []
       }
     }
   }

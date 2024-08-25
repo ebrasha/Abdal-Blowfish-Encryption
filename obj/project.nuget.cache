@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Yu7ys4a7oH0=",
+  "dgSpecHash": "C+f5PGgF7LM=",
   "success": true,
   "projectFilePath": "C:\\Users\\EbraSha\\Documents\\Github\\Abdal Blowfish Encryption\\Abdal Security Group App.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\EbraSha\\.nuget\\packages\\chilkatnativelib\\9.50.99\\chilkatnativelib.9.50.99.nupkg.sha512",
     "C:\\Users\\EbraSha\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\EbraSha\\.nuget\\packages\\microsoft.extensions.objectpool\\5.0.10\\microsoft.extensions.objectpool.5.0.10.nupkg.sha512",
+    "C:\\Users\\EbraSha\\.nuget\\packages\\microsoft.net.illink.analyzers\\7.0.100-1.23401.1\\microsoft.net.illink.analyzers.7.0.100-1.23401.1.nupkg.sha512",
+    "C:\\Users\\EbraSha\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23401.1\\microsoft.net.illink.tasks.7.0.100-1.23401.1.nupkg.sha512",
     "C:\\Users\\EbraSha\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\EbraSha\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\EbraSha\\.nuget\\packages\\microsoft.win32.registry.accesscontrol\\8.0.0\\microsoft.win32.registry.accesscontrol.8.0.0.nupkg.sha512",
@@ -66,7 +68,10 @@
     "C:\\Users\\EbraSha\\.nuget\\packages\\system.threading.accesscontrol\\8.0.0\\system.threading.accesscontrol.8.0.0.nupkg.sha512",
     "C:\\Users\\EbraSha\\.nuget\\packages\\system.web.services.description\\4.10.0\\system.web.services.description.4.10.0.nupkg.sha512",
     "C:\\Users\\EbraSha\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512",
-    "C:\\Users\\EbraSha\\.nuget\\packages\\ui.for.winforms.allcontrols.net70\\2023.2.718\\ui.for.winforms.allcontrols.net70.2023.2.718.nupkg.sha512"
+    "C:\\Users\\EbraSha\\.nuget\\packages\\ui.for.winforms.allcontrols.net70\\2023.2.718\\ui.for.winforms.allcontrols.net70.2023.2.718.nupkg.sha512",
+    "C:\\Users\\EbraSha\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\7.0.20\\microsoft.netcore.app.runtime.win-x86.7.0.20.nupkg.sha512",
+    "C:\\Users\\EbraSha\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\7.0.20\\microsoft.windowsdesktop.app.runtime.win-x86.7.0.20.nupkg.sha512",
+    "C:\\Users\\EbraSha\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\7.0.20\\microsoft.aspnetcore.app.runtime.win-x86.7.0.20.nupkg.sha512"
   ],
   "logs": []
 }

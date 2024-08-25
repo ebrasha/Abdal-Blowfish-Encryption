@@ -327,60 +327,55 @@ namespace Abdal_Security_Group_App
 
         private void bg_worker_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
+            Chilkat.Crypt2 crypt = new Chilkat.Crypt2();
+            crypt.CryptAlgorithm = EncryptionAlgorithmList.Text;
+            crypt.CipherMode = CipherModeList.Text;
+            crypt.KeyLength = int.Parse(KeyLengthList.Text);
+            crypt.PaddingScheme = 0;
+            crypt.EncodingMode = EncodingModeList.Text;
+            string ivHex = "";
+
+            if (EncryptionAlgorithmList.Text == "blowfish2")
+            {
+                ivHex = "0001020304050607";
+            }
+            else
+            {
+                ivHex = "000102030405060708090A0B0C0D0E0F";
+            }
+
+            crypt.SetEncodedIV(ivHex, "hex");
+            string keyHex = SecretKeyTextBox.Text;
+            crypt.SetEncodedKey(keyHex, "hex");
+
             if (SwitchOperation.Value)
             {
-                // Mean user try to encrypt something
+                // User is trying to encrypt something
+                string rawText = RawtextForm.GetRawText();
 
-                Chilkat.Crypt2 crypt = new Chilkat.Crypt2();
-                crypt.CryptAlgorithm = EncryptionAlgorithmList.Text;
-                crypt.CipherMode = CipherModeList.Text;
-                crypt.KeyLength = int.Parse(KeyLengthList.Text);
-                crypt.PaddingScheme = 0;
-                crypt.EncodingMode = EncodingModeList.Text;
-                string ivHex = "";
-                if (EncryptionAlgorithmList.Text == "blowfish2")
-                {
-                    // blowfish2
-                    ivHex = "0001020304050607";
-                }
-                else
-                {
-                    //twofish
-                    ivHex = "000102030405060708090A0B0C0D0E0F";
-                }
+                // Convert the string to a byte array using UTF-8 encoding
+                byte[] inputBytes = System.Text.Encoding.UTF8.GetBytes(rawText);
 
-                crypt.SetEncodedIV(ivHex, "hex");
-                // Secret Key
-                string keyHex = SecretKeyTextBox.Text;
-                crypt.SetEncodedKey(keyHex, "hex");
-                string encStr = crypt.EncryptStringENC(RawtextForm.GetRawText());
+                // Encrypt the byte array
+                byte[] encryptedBytes = crypt.EncryptBytes(inputBytes);
+
+                // Convert the encrypted bytes to a hex string for display/storage
+                string encStr = crypt.Encode(encryptedBytes, "hex");
                 SendEncTextToForm(encStr);
             }
             else
             {
-                Chilkat.Crypt2 crypt = new Chilkat.Crypt2();
-                crypt.CryptAlgorithm = EncryptionAlgorithmList.Text;
-                crypt.CipherMode = CipherModeList.Text;
-                crypt.KeyLength = int.Parse(KeyLengthList.Text);
-                crypt.PaddingScheme = 0;
-                crypt.EncodingMode = EncodingModeList.Text;
-                string ivHex = "";
-                if (EncryptionAlgorithmList.Text == "blowfish2")
-                {
-                    // blowfish2
-                    ivHex = "0001020304050607";
-                }
-                else
-                {
-                    //twofish
-                    ivHex = "000102030405060708090A0B0C0D0E0F";
-                }
+                // User is trying to decrypt something
+                string encStr = EncTextForm.GetEncText();
 
-                crypt.SetEncodedIV(ivHex, "hex");
-                // Secret Key
-                string keyHex = SecretKeyTextBox.Text;
-                crypt.SetEncodedKey(keyHex, "hex");
-                string decStr = crypt.DecryptStringENC(EncTextForm.GetEncText());
+                // Convert the hex string back to byte array
+                byte[] encryptedBytes = crypt.Decode(encStr, "hex");
+
+                // Decrypt the byte array
+                byte[] decryptedBytes = crypt.DecryptBytes(encryptedBytes);
+
+                // Convert the decrypted byte array back to a string
+                string decStr = System.Text.Encoding.UTF8.GetString(decryptedBytes);
                 SetDeCryptTextToForm(decStr);
             }
         }

@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\EbraSha\\Documents\\Github\\Abdal Blowfish Encryption\\Abdal Security Group App.csproj": {
-      "version": "2.0.0",
+      "version": "2.1.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\EbraSha\\Documents\\Github\\Abdal Blowfish Encryption\\Abdal Security Group App.csproj",
         "projectName": "Abdal Blowfish Encryption",
@@ -54,6 +54,18 @@
               "target": "Package",
               "version": "[9.50.99, )"
             },
+            "Microsoft.NET.ILLink.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23401.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23401.1, )",
+              "autoReferenced": true
+            },
             "Microsoft.Windows.Compatibility": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -82,6 +94,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x86",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -91,6 +117,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x86": {
+          "#import": []
         }
       }
     }
